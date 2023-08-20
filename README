@@ -1,0 +1,25 @@
+First Choice Stadium Registration System Proposal
+CPSC 3660 – Introduction to Database Systems
+Cadence Meszaros, Riley Koppang, Sammy Mohammad, Tofunmi Ojo September 29, 2022
+Introduction
+We are opening a new stadium. It requires a database system that manages
+game registration for the entirety of the season. This database will track information on games, fans, and employees for games on a specific night, including specific teams, fans, employees and various scores.
+Data Requirements
+Game – date, teams, score, time, location Fan - seat, name, favorite team Employees - id number, salary, name, duty
+Relationships:
+One or more Employees works at a game Many fans attend a single game
+Operations/Functionality
+This database will provide the following functionality
+Insert Operations
+Insert a new employee, game, or fan Assign an employee to a game
+A fan registers for a game
+Delete Operations
+A game gets canceled Employee quits
+A fan does not show up
+Update Operation
+Update final score Update employee info Update fan info
+Query
+What teams are playing What the score is
+How many fans are attending What is an employee’s salary When is the game
+Multiple-entity query
+Employee job description – display an employee’s name and their id number, followed by a list of games worked and duties
