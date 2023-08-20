@@ -1,0 +1,18 @@
+<html>
+  <head><title>First Choice Stadium - Add Game Detail</title><head>
+    <h1> Add Game Detail</h1>
+    <body style= "background-color: blue; color:white; text-align: center;">
+
+<form action = "insertGame.php" method=post>
+Date: <input type=date name="date" required="required" size=15> <br><br>
+Time: <input type=time name="time" required="required" size=15> <br><br>
+Home Team: <input type=text name="hometeam" required="required" size=15> <br><br>
+Away Team: <input type=text name="awayteam" required="required" size=15> <br><br>
+Home Team Score: <input type=text name="hometeamscore" required="required" size=8> <br><br>
+Away Team Score: <input type=text name="awayteamscore" required="required" size=8> <br><br>
+Location: <input type=text name="location" required="required" size=8> <br><br>
+<input type=submit name="submit" value="Add Game Detail">
+</form>
+
+</body>
+</html>

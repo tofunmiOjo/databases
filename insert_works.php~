@@ -1,0 +1,19 @@
+<html>
+  <head><title>First Choice Stadium - Add Employeee Detail</title><head>
+    <h1> Add Employee Detail</h1>
+<body style= "background-color: blue; color:white; text-align: center;">
+
+<form action = "insertEmployee.php" method=post>
+Employee ID Number: <input type=text name="idnumber" size=20> <br><br>
+Game Date: <input type=text name="date" size=15> <br><br>
+<input type=submit name="submit" value="Add Employee Details">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

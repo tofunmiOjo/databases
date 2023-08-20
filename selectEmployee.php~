@@ -1,0 +1,43 @@
+<?php
+
+if(isset($_COOKIE["username"])) {
+   $username = $_COOKIE["kopr3660"];
+   $password = $_COOKIE["aes4shohZ1"];
+
+   $conn = new mysqli("vconroy.cs.uleth.ca",kopr3660,aes4shohZ1,kopr3660); 
+
+   $sql = "select * from EMPLOYEE where idnumber='$_POST[idnumber]'";
+
+   $result = $conn->query($sql); 
+   if($result->num_rows != 0) 
+   {  
+      echo "<table border=1>";
+      while($rec = $result->fetch_assoc()) {
+
+
+echo "<tr>";
+echo "<td>$rec[idnumber]</td>";
+echo "<td>$rec[salary]</td>";
+echo "<td>$rec[name]</td>";
+echo "<td>$rec[duty]</td>";
+echo "</tr>";
+      }
+      echo "</table>";
+
+
+   } else {
+
+      echo "<p>Employee $_POST[id] does not exist.</p>";
+   
+   }
+
+}
+else
+{
+  echo "<h3>You are not logged in!</h3><p> <a href=\"index.php\">Login First</a></p>"; 
+
+}
+
+echo "<a href=\"main.php\">Return</a> to Home Page."; 
+
+?>
